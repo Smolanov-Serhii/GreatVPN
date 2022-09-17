@@ -1,6 +1,12 @@
 .banner{
   background-color: #002649;
   position: relative;
+  &-small{
+    .banner__content{
+      padding-top: 232px;
+      padding-bottom: 232px;
+    }
+  }
   &__container{
 
   }
@@ -52,6 +58,12 @@
     line-height: 135.5%;
     color: #FFFFFF;
     margin-bottom: 0;
+  }
+  &__desc{
+    margin-top: 26px;
+    max-width: 993px;
+    line-height: 159%;
+    color: #FFFFFF;
   }
   &__btn{
     margin-top: 47px;

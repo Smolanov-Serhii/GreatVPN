@@ -2,6 +2,9 @@
   position: relative;
   margin-bottom: 60px;
   margin-top: 134px;
+  &-margin{
+    margin-top: -250px;
+  }
   &__dec{
     position: absolute;
     bottom: -128px;
