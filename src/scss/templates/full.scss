@@ -1,0 +1,35 @@
+.full{
+  position: relative;
+  background-color: #002649;
+  &__dec{
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: overlay;
+    opacity: 0.41;
+  }
+  &__image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    mix-blend-mode: lighten;
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+  &__container{
+
+  }
+  &__content{
+    position: relative;
+    padding: 216px 0;
+    max-width: 539px;
+  }
+  &__title{
+    color: white;
+  }
+  &__subtitle{
+    color: white;
+  }
+}

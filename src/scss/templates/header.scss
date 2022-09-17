@@ -1,0 +1,39 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  transition: $transition;
+  &.moved{
+    background-color: #002649;
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav{
+    &-list{
+      display: flex;
+      align-items: center;
+    }
+    &-item{
+      margin-right: 49px;
+      &:last-child{
+        margin-right: 0;
+      }
+      &.current{
+        .header__nav-lnk{
+          border-bottom: 2px solid #00CFFD;
+        }
+      }
+    }
+    &-lnk{
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 35px 0;
+      display: inline-block;
+    }
+  }
+}

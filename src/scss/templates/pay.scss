@@ -1,0 +1,15 @@
+.pay{
+  margin-top: 60px;
+  margin-bottom: 168px;
+  &__container{
+
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item{
+    margin: 0 17px;
+  }
+}

@@ -1,0 +1,153 @@
+@import "normalize";
+@import "aos";
+@import "preloader";
+@import "swiper-bundle";
+//@import "selectric";
+@import "default";
+$transition: 0.2s;
+$px: 0.0520833333333333;
+// GENERAL DOCUMENT STYLES
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+html{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+body{
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.locked{
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+}
+main{
+  flex: 1;
+  overflow: hidden;
+}
+.padding-right{
+  padding-right: 310px;
+  @media all and (max-width: 1700px){
+    padding-right: 200px;
+  }
+  @media all and (max-width: 1600px){
+    padding-right: 100px;
+  }
+  @media all and (max-width: 1400px){
+    padding-right: 75px;
+  }
+  @media all and (max-width: 1024px){
+    padding-right: 50px;
+  }
+  @media all and (max-width: 768px){
+    padding-right: 35px;
+  }
+  @media all and (max-width: 500px){
+    padding-right: 20px;
+  }
+}
+.padding-left{
+  padding-left: 310px;
+  @media all and (max-width: 1700px){
+    padding-left: 200px;
+  }
+  @media all and (max-width: 1600px){
+    padding-left: 100px;
+  }
+  @media all and (max-width: 1400px){
+    padding-left: 75px;
+  }
+  @media all and (max-width: 1024px){
+    padding-left: 50px;
+  }
+  @media all and (max-width: 768px){
+    padding-left: 35px;
+  }
+  @media all and (max-width: 500px){
+    padding-left: 20px;
+  }
+}
+.main-container{
+  max-width: 1920px;
+  margin: auto;
+  @extend .padding-left;
+  @extend .padding-right;
+}
+.middle-container{
+  max-width: 1700px;
+  margin: auto;
+  @extend .padding-left;
+  @extend .padding-right;
+}
+.button{
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition;
+  &__stroke{
+    padding: 13px 63px;
+    border: 1px solid #005DB2;
+  }
+  &__blue{
+    padding: 15px 63px 13px 63px;
+    position: relative;
+    background: linear-gradient(268.55deg, #005DB3 0%, #00C4EF 99.44%);
+    &:hover{
+      background: linear-gradient(268.55deg, #005DB3 20%, #00C4EF 120.44%);
+    }
+  }
+  span{
+    color: white;
+    line-height: 100%;
+  }
+  img{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+  }
+}
+.section-title{
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 107%;
+  text-transform: uppercase;
+  color: #093A84;
+  margin-bottom: 30px;
+}
+.section-subtitle{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159%;
+  color: #000000;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  max-width: 776px;
+}
+@import "templates/header";
+@import "templates/banner";
+@import "templates/color";
+@import "templates/set";
+@import "templates/great";
+@import "templates/full";
+@import "templates/faq";
+@import "templates/plan";
+@import "templates/pay";
+@import "templates/customers";
+@import "templates/vstavka";
+@import "templates/block";
+
+
+@import "templates/footer";
