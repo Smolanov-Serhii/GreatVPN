@@ -1,0 +1,17 @@
+.text-banner{
+  background-color: #002649;
+  padding: 183px 0 47px 0;
+  &__container{
+
+  }
+  &__title{
+    max-width: 838px;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 107%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
