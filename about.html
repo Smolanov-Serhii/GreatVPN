@@ -33,6 +33,18 @@
   </div>
 </div>
 <header class="header default">
+  <div class="header__mobile main-container">
+    <div class="header__mobile-logo">
+      <a href="index.html">
+        <img src="/images/header/logo.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="header__mobile-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   <div class="header__container main-container">
     <div class="header__logo">
       <a href="index.html">
@@ -55,14 +67,20 @@
 <main id="main">
   <section class="banner">
     <div class="banner__img">
-      <img src="images/templates/banner/bg2.png" alt="Banner">
+      <picture>
+        <source srcset="/images/templates/banner/bg2.png" media="(min-width: 500px)">
+        <img src="/images/templates/banner/bg2-mob.png" alt="Banner">
+      </picture>
     </div>
     <div class="banner__decoration">
-      <img src="images/templates/banner/decoration.svg" alt="Decoration">
+      <picture>
+        <source srcset="/images/templates/banner/decoration.svg" media="(min-width: 500px)">
+        <img src="/images/templates/banner/decoration-mob.svg" alt="Decoration">
+      </picture>
     </div>
     <div class="banner__container main-container">
       <div class="banner__content">
-        <h1 class="banner__title">
+        <h1 class="banner__title" data-aos="fade-right" data-aos-delay="100">
           The World's Only Community Supported
           Secure VPN Service.
         </h1>
@@ -72,7 +90,7 @@
   <section class="color color__up">
     <div class="color__container main-container">
       <div class="color__list">
-        <div class="color__item">
+        <div class="color__item" data-aos="fade-up" data-aos-delay="100">
           <div class="color__icon">
             <img src="/images/templates/color/icon-2.svg" alt="Security">
           </div>
@@ -83,7 +101,7 @@
             Get VPN Berry to stop snooping ISPs and third-party trackers on all the devices you have.
           </p>
         </div>
-        <div class="color__item">
+        <div class="color__item" data-aos="fade-up" data-aos-delay="100">
           <div class="color__icon">
             <img src="/images/templates/color/icon-1.svg" alt="Privacy">
           </div>
@@ -94,7 +112,7 @@
             Use a VPN to hide your IP address and the sensitive data you send & receive.
           </p>
         </div>
-        <div class="color__item">
+        <div class="color__item" data-aos="fade-up" data-aos-delay="100">
           <div class="color__icon">
             <img src="/images/templates/color/icon-3.svg" alt="Freedom">
           </div>
@@ -110,10 +128,10 @@
   </section>
   <section class="block">
     <div class="block__container middle-container">
-      <h2 class="block__title section-title">
+      <h2 class="block__title section-title" data-aos="fade-up" data-aos-delay="100">
         Our Story
       </h2>
-      <div class="block__content">
+      <div class="block__content" data-aos="fade-up" data-aos-delay="300">
         <p><strong>Our story began at CERN, where the web was born and where our founding team met. In 2014, on the 25th anniversary of the web, we built Proton Mail to make online privacy a reality again for millions of people around the world. The Proton VPN project was born out of a need to better protect the activists and journalists that use Proton Mail.</strong></p>
         <p>In the years since we began as a crowdfunded project, Proton Mail and Proton VPN continue to be primarily supported by our community and developed with community input. When it comes to fighting for online security and privacy, we have a long track record. Whether it is challenging governments, educating the public, or training journalists, we're committed to staying on the front lines.</p>
         <p>We are scientists, engineers, and developers, and we care deeply about the future of the Internet. We're also experts in security and Internet technologies, and we're applying this expertise for the public good. If this sounds like you, we would love to hear from you.</p>
@@ -129,13 +147,13 @@
     </div>
     <div class="full__container main-container">
       <div class="full__content">
-        <h2 class="full__title section-title">
+        <h2 class="full__title section-title" data-aos="fade-right" data-aos-delay="100">
           Global VPN Server Network
         </h2>
-        <div class="full__subtitle section-subtitle">
+        <div class="full__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
           VPN Berry has hundreds of secure VPN servers all around the world, including several free VPN servers. This ensures that there is always a high bandwidth server nearby no matter where you are connecting from, providing a low latency VPN connection for best performance.
         </div>
-        <a href="#" download="" class="header__app button button__blue">
+        <a href="#" download="" class="header__app button button__blue" data-aos="fade-right" data-aos-delay="500">
           <img src="/images/header/apple.svg" alt="downloads">
           <span>Download VPN</span>
         </a>
@@ -144,10 +162,10 @@
   </section>
   <section class="block">
     <div class="block__container middle-container">
-      <h2 class="block__title section-title">
+      <h2 class="block__title section-title" data-aos="fade-up" data-aos-delay="100">
         About Great VPN
       </h2>
-      <div class="block__content">
+      <div class="block__content" data-aos="fade-up" data-aos-delay="300">
         <p>Proton is headquartered in Geneva, Switzerland, allowing our users to benefit from some of the world's strongest privacy laws. Proton is supported by FONGIT (a non-profit foundation financed by the Swiss Federal Commission for Technology and Innovation for the public good), and the European Commission</p>
         <p>We are scientists, engineers, and developers drawn together by a shared vision of protecting civil liberties online. Proton was founded in 2014 by a team of scientists who met at CERN (the European Center for Nuclear Research) and created Proton Mail, the world’s largest encrypted email service. In total, we protect over 20 million people with our products. If you are interested in joining our team, we are hiring</p>
       </div>
@@ -158,7 +176,7 @@
       <img src="/images/templates/great/dec.svg" alt="Decoration">
     </div>
     <div class="great__container main-container">
-      <h2 class="great__title section-title">
+      <h2 class="great__title section-title" data-aos="fade-up" data-aos-delay="100">
         Our Values
       </h2>
       <div class="great__list">
@@ -170,7 +188,7 @@
           <p class="great__item-desc">Unlike other VPN services, we provide full transparency so you know who is running the service. We are well known for our work improving Internet security and privacy.
           </p>
         </div>
-        <div class="great__item">
+        <div class="great__item" data-aos="fade-up" data-aos-delay="300">
           <div class="great__item-icon">
             <img src="/images/templates/great/icon1-2.svg" alt="Security First">
           </div>
@@ -178,7 +196,7 @@
           <p class="great__item-desc">VPN Berry does not use insecure protocols and encryption levels. VPN Berry benefits from the security experience gained from building the world's largest secure email service.
           </p>
         </div>
-        <div class="great__item">
+        <div class="great__item" data-aos="fade-up" data-aos-delay="400">
           <div class="great__item-icon">
             <img src="/images/templates/great/icon1-3.svg" alt="Community">
           </div>
@@ -186,21 +204,21 @@
           <p class="great__item-desc">VPN Berry is community supported and community is everything to us. We provide professional customer support to the entire VPN Berry community, including free users.
           </p>
         </div>
-        <div class="great__item">
+        <div class="great__item" data-aos="fade-up" data-aos-delay="500">
           <div class="great__item-icon">
             <img src="/images/templates/great/icon1-4.svg" alt="Honesty">
           </div>
           <h3 class="great__item-title">Honesty</h3>
           <p class="great__item-desc">We will always tell you what VPN can and can't protect, as even the <a href="#">best VPN service</a> has limitations. When it comes to security, we believe in transparently communicating the <a href="#">threat model.</a></p>
         </div>
-        <div class="great__item">
+        <div class="great__item" data-aos="fade-up" data-aos-delay="600">
           <div class="great__item-icon">
             <img src="/images/templates/great/icon1-5.svg" alt="Technical Excellence">
           </div>
           <h3 class="great__item-title">Technical Excellence</h3>
           <p class="great__item-desc">We have a long track record when it comes to security. Whether it's operating our own Secure Core servers for privacy or using 10Gbit networks for performance, quality comes first.</p>
         </div>
-        <div class="great__item">
+        <div class="great__item" data-aos="fade-up" data-aos-delay="700">
           <div class="great__item-icon">
             <img src="/images/templates/great/icon1-6.svg" alt="Privacy & Security for everyone">
           </div>
@@ -213,17 +231,20 @@
   <section class="vstavka main-container">
     <div class="vstavka__container">
       <div class="vstavka__bg">
-        <img src="/images/templates/vstavka/bg.svg" alt="Set up a secure VPN connection on a Mac">
+        <picture>
+          <source srcset="/images/templates/vstavka/bg.svg" media="(min-width: 500px)">
+          <img src="/images/templates/vstavka/bg-mob.svg" alt="Set up a secure VPN connection on a Mac">
+        </picture>
       </div>
       <div class="vstavka__content">
-        <h2 class="vstavka__title section-title">
+        <h2 class="vstavka__title section-title" data-aos="fade-right" data-aos-delay="100">
           Set up a secure VPN connection on a Mac
         </h2>
-        <h3 class="vstavka__subtitle section-subtitle">
+        <h3 class="vstavka__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
           with a 30-day money-back guarantee
         </h3>
       </div>
-      <div class="vstavka__button">
+      <div class="vstavka__button" data-aos="fade-up" data-aos-delay="500">
         <a href="#" download="" class="header__app button button__blue">
           <img src="/images/header/apple.svg" alt="downloads">
           <span>Download VPN</span>

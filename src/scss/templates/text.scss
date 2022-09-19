@@ -1,34 +1,50 @@
-.text{
+section.text{
   position: relative;
   margin-bottom: 232px;
-  &__dec{
-    mix-blend-mode: multiply;
-    img{
-      position: absolute;
-      &:first-child{
-        top: -200px;
-        right: 0;
-      }
-      &:nth-child(2){
-        top: calc(50% - 500px);
-        left: 0;
-      }
-      &:nth-child(3){
-        right: 0;
-        bottom: 390px;
+  @media all and (max-width: 500px){
+    margin-bottom: 61px;
+  }
+  .text{
+    &__dec{
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      z-index: -1;
+      img{
+        position: absolute;
+        &:first-child{
+          top: -200px;
+          right: 0;
+        }
+        &:nth-child(2){
+          top: calc(50% - 500px);
+          left: 0;
+        }
+        &:nth-child(3){
+          right: 0;
+          bottom: 390px;
+        }
       }
     }
-  }
-  &__container{
-    position: relative;
-  }
-  &__date{
-    margin-top: 21px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 159%;
-    color: #C9D3E9;
-    margin-bottom: 48px;
+    &__container{
+      position: relative;
+    }
+    &__date{
+      margin-top: 21px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 159%;
+      color: #C9D3E9;
+      margin-bottom: 48px;
+      @media all and (max-width: 1024px){
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      @media all and (max-width: 500px){
+        font-size: 16px;
+        margin-bottom: 22px;
+      }
+    }
+
   }
   h2{
     font-weight: 700;
@@ -36,6 +52,10 @@
     line-height: 159%;
     color: #093A84;
     margin-bottom: 20px;
+    @media all and (max-width: 500px){
+      font-size: 24px;
+      line-height: 159%;
+    }
   }
   h3{
     font-weight: 500;
@@ -43,10 +63,19 @@
     line-height: 159%;
     color: #333333;
     margin-bottom: 14px;
+    @media all and (max-width: 500px){
+      font-size: 20px;
+      line-height: 159%;
+      margin-bottom: 10px;
+    }
   }
   p{
     line-height: 159%;
     margin-bottom: 30px;
     display: inline-block;
+    @media all and (max-width: 500px){
+      margin-bottom: 40px;
+    }
   }
+
 }

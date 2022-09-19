@@ -1,6 +1,10 @@
 .pay{
   margin-top: 60px;
   margin-bottom: 168px;
+  @media all and (max-width: 500px){
+    margin-top: 18px;
+    margin-bottom: 65px;
+  }
   &-small{
     margin-bottom: 82px;
     margin-top: 44px;
@@ -15,5 +19,8 @@
   }
   &__item{
     margin: 0 17px;
+    @media all and (max-width: 500px){
+      margin: 0 4px;
+    }
   }
 }

@@ -34,6 +34,18 @@
     </div>
 </div>
 <header class="header default">
+    <div class="header__mobile main-container">
+        <div class="header__mobile-logo">
+            <a href="index.html">
+                <img src="/images/header/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="header__mobile-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <div class="header__container main-container">
         <div class="header__logo">
             <a href="index.html">
@@ -56,27 +68,33 @@
 <main id="main">
     <section class="banner banner-small">
         <div class="banner__img">
-            <img src="images/templates/banner/bg3.png" alt="Banner">
+            <picture>
+                <source srcset="/images/templates/banner/bg3.png" media="(min-width: 500px)">
+                <img src="/images/templates/banner/bg3-mob.png" alt="Banner">
+            </picture>
         </div>
         <div class="banner__decoration">
-            <img src="images/templates/banner/decoration.svg" alt="Decoration">
+            <picture>
+                <source srcset="/images/templates/banner/decoration.svg" media="(min-width: 500px)">
+                <img src="/images/templates/banner/decoration-mob.svg" alt="Decoration">
+            </picture>
         </div>
         <div class="banner__container main-container">
             <div class="banner__content">
-                <h1 class="banner__title">
+                <h1 class="banner__title" data-aos="fade-right" data-aos-delay="100">
                     VPN Security <br>Features
                 </h1>
-                <h2 class="banner__subtitle">
+                <h2 class="banner__subtitle" data-aos="fade-right" data-aos-delay="300">
                     We built Proton VPN with extra security features to make it better at <br>protecting your privacy than an ordinary VPN.
                 </h2>
-                <p class="banner__desc">When you use VPN Berry to browse the web, your Internet connection is encrypted. By routing your connection through encrypted tunnels, VPN's Berry advanced security features ensure that an attacker cannot eavesdrop on your connection. It also allows you to access websites that might be blocked in your country.</p>
+                <p class="banner__desc" data-aos="fade-right" data-aos-delay="500">When you use VPN Berry to browse the web, your Internet connection is encrypted. By routing your connection through encrypted tunnels, VPN's Berry advanced security features ensure that an attacker cannot eavesdrop on your connection. It also allows you to access websites that might be blocked in your country.</p>
             </div>
         </div>
     </section>
     <section class="digit">
         <div class="digit__container small-container">
             <div class="digit__list">
-                <div class="digit__item">
+                <div class="digit__item" data-aos="fade-up" data-aos-delay="500">
                     <div class="digit__value">
                         63
                     </div>
@@ -84,7 +102,7 @@
                         Countries
                     </div>
                 </div>
-                <div class="digit__item">
+                <div class="digit__item" data-aos="fade-up" data-aos-delay="800">
                     <div class="digit__value">
                         1,772
                     </div>
@@ -92,7 +110,7 @@
                         Servers
                     </div>
                 </div>
-                <div class="digit__item">
+                <div class="digit__item" data-aos="fade-up" data-aos-delay="1100">
                     <div class="digit__value">
                         2,073
                     </div>
@@ -105,13 +123,19 @@
     </section>
     <section class="text-left">
         <div class="text-left__img">
-            <img src="/images/templates/text-left/bg1.png" alt="Decoration">
+            <picture>
+                <source srcset="/images/templates/text-left/bg1.png" media="(min-width: 500px)">
+                <img src="/images/templates/text-left/bg1-mob.png" alt="Banner">
+            </picture>
         </div>
         <div class="text-left__dec">
-            <img src="/images/templates/text-left/dec.svg" alt="Decoration">
+            <picture>
+                <source srcset="/images/templates/text-left/dec.svg" media="(min-width: 500px)">
+                <img src="/images/templates/text-left/dec-mob.svg" alt="Banner">
+            </picture>
         </div>
         <div class="text-left__container main-container">
-            <div class="text-left__content">
+            <div class="text-left__content" data-aos="fade-right" data-aos-delay="100">
                 <h2>Secure Core</h2>
                 <p>Proton VPN''s Secure Core architecture gives our secure VPN service the unique ability to defend against network-based attacks. Secure Core protects your connection by routing your traffic through multiple servers before leaving our network. This means an advanced adversary who can monitor the network traffic at the exit server will not be able to discover the true IP address of Proton VPN users, nor match browsing activity to that IP.</p>
                 <p>Secure core servers are located in hardened data centers in Switzerland, Iceland, and Sweden, protected by strong privacy laws, and operated on our own dedicated networks.</p>
@@ -122,7 +146,7 @@
             </div>
         </div>
     </section>
-    <section class="full-col">
+    <section class="full-col" data-aos="fade-up" data-aos-delay="100">
         <div class="full-col__bg">
             <img src="/images/templates/full-col/bg.png" alt="Decoration">
         </div>
@@ -159,13 +183,19 @@
     </section>
     <section class="text-left text-left__small">
         <div class="text-left__img">
-            <img src="/images/templates/text-left/bg2.png" alt="Decoration">
+            <picture>
+                <source srcset="/images/templates/text-left/bg2.png" media="(min-width: 500px)">
+                <img src="/images/templates/text-left/bg2-mob.png" alt="Banner">
+            </picture>
         </div>
         <div class="text-left__dec">
-            <img src="/images/templates/text-left/dec.svg" alt="Decoration">
+            <picture>
+                <source srcset="/images/templates/text-left/dec.svg" media="(min-width: 500px)">
+                <img src="/images/templates/text-left/dec-mob.svg" alt="Banner">
+            </picture>
         </div>
         <div class="text-left__container main-container">
-            <div class="text-left__content">
+            <div class="text-left__content" data-aos="fade-right" data-aos-delay="100">
                 <h2>Anonymous</h2>
                 <p>We respect your privacy so no personal identifying information is required to obtain a Proton VPN account. You can sign up with an anonymous Proton Mail email account and use our anonymous VPN without disclosing your identity.</p>
                 <h2>High Speed</h2>
@@ -178,17 +208,20 @@
     <section class="vstavka main-container">
         <div class="vstavka__container">
             <div class="vstavka__bg">
-                <img src="/images/templates/vstavka/bg.svg" alt="Set up a secure VPN connection on a Mac">
+                <picture>
+                    <source srcset="/images/templates/vstavka/bg.svg" media="(min-width: 500px)">
+                    <img src="/images/templates/vstavka/bg-mob.svg" alt="Set up a secure VPN connection on a Mac">
+                </picture>
             </div>
             <div class="vstavka__content">
-                <h2 class="vstavka__title section-title">
+                <h2 class="vstavka__title section-title" data-aos="fade-right" data-aos-delay="100">
                     Set up a secure VPN connection on a Mac
                 </h2>
-                <h3 class="vstavka__subtitle section-subtitle">
+                <h3 class="vstavka__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
                     with a 30-day money-back guarantee
                 </h3>
             </div>
-            <div class="vstavka__button">
+            <div class="vstavka__button" data-aos="fade-up" data-aos-delay="500">
                 <a href="#" download="" class="header__app button button__blue">
                     <img src="/images/header/apple.svg" alt="downloads">
                     <span>Download VPN</span>

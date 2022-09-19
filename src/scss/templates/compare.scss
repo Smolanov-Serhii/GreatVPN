@@ -1,6 +1,15 @@
 .compare{
   margin-top: 82px;
   margin-bottom: 157px;
+  @media all and (max-width: 1024px){
+    margin-bottom: 130px;
+  }
+  @media all and (max-width: 768px){
+    margin-bottom: 90px;
+  }
+  @media all and (max-width: 500px){
+    margin-bottom: 46px;
+  }
   &__container{
 
   }
@@ -18,16 +27,37 @@
     display: flex;
     flex-direction: column;
     padding: 51px;
+    @media all and (max-width: 1300px){
+      width: calc(50% - 15px);
+      padding: 51px 30px;
+    }
+    @media all and (max-width: 1024px){
+      width: 100%;
+      margin-bottom: 35px;
+      padding: 18px 20px 34px 20px;
+    }
     &-header{
       display: flex;
       justify-content: space-between;
       margin-bottom: 33px;
+      @media all and (max-width: 500px){
+        align-items: flex-end;
+      }
     }
     &-title{
       font-weight: 700;
       font-size: 24px;
       line-height: 159%;
       color: #093A84;
+      @media all and (max-width: 1300px){
+        font-size: 20px;
+      }
+      @media all and (max-width: 1024px){
+        font-size: 18px;
+      }
+      @media all and (max-width: 500px){
+        font-size: 16px;
+      }
     }
     &-row{
       margin-bottom: 20px;
@@ -37,11 +67,21 @@
       color: #000000;
       display: flex;
       align-items: center;
+      @media all and (max-width: 500px){
+        font-size: 14px;
+        margin-bottom: 17px;
+      }
       .fire{
         margin-right: 27px;
+        @media all and (max-width: 500px){
+          margin-right: 5px;
+        }
       }
       .info{
         margin-left: 27px;
+        @media all and (max-width: 500px){
+          margin-left: 5px;
+        }
       }
 
     }
@@ -53,6 +93,15 @@
         font-size: 48px;
         line-height: 100%;
         color: #093A84;
+        @media all and (max-width: 1300px){
+          font-size: 44px;
+        }
+        @media all and (max-width: 1024px){
+          font-size: 40px;
+        }
+        @media all and (max-width: 500px){
+          font-size: 36px;
+        }
         span{
           font-weight: 700;
           font-size: 24px;
@@ -66,6 +115,9 @@
         line-height: 159%;
         color: #C9D3E9;
         margin-left: 14px;
+        @media all and (max-width: 500px){
+          font-size: 14px;
+        }
       }
     }
     &-content{
@@ -77,12 +129,22 @@
       margin-top: auto;
       text-align: center;
       padding-top: 43px;
+      @media all and (max-width: 500px){
+        padding-top: 22px;
+      }
       .button{
         padding: 15px 97px;
+        @media all and (max-width: 500px){
+          padding: 12px 77px;
+        }
         span{
           font-weight: 300;
           font-size: 24.7273px;
           line-height: 37px;
+          @media all and (max-width: 500px){
+            font-size: 16px;
+            line-height: 100%;
+          }
         }
       }
       .button__stroke{

@@ -2,8 +2,17 @@
   position: relative;
   margin-bottom: 60px;
   margin-top: 134px;
+  @media all and (max-width: 1024px){
+    margin-top: 63px;
+  }
+  @media all and (max-width: 500px){
+    margin-bottom: 0;
+  }
   &-margin{
     margin-top: -250px;
+    @media all and (max-width: 500px){
+      margin-top: -207px;
+    }
   }
   &__dec{
     position: absolute;
@@ -11,21 +20,40 @@
     left: 0;
     mix-blend-mode: multiply;
     z-index: -1;
+    pointer-events: none;
+    @media all and (max-width: 768px){
+      bottom: 96px;
+      right: 214px;
+      img{
+        max-width: none;
+      }
+    }
   }
   &__container{
 
   }
   &__title{
     text-align: center;
+    @media all and (max-width: 1024px){
+      text-align: left;
+      margin-bottom: 25px;
+    }
   }
   &__subtitle{
     text-align: center;
+    @media all and (max-width: 1024px){
+      text-align: left;
+      max-width: none;
+    }
   }
   &__list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 98px;
+    @media all and (max-width: 768px){
+      margin-top: 41px;
+    }
   }
   &__item{
     width: calc(33.3333% - (40px / 3));
@@ -36,6 +64,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    @media all and (max-width: 1024px){
+      width: 100%;
+      margin-bottom: 20px;
+      &:nth-child(1){
+        margin-bottom: 71px;
+      }
+    }
     &-best{
       background: linear-gradient(268.55deg, #005DB3 0%, #00C4EF 99.44%);
       box-shadow: 0px 4px 57px rgba(206, 0, 141, 0.07);
@@ -62,6 +97,9 @@
       padding: 12px 90px 9px 25px;
       background-color: #093A84;
       border-radius: 9px 9px 0 0;
+      @media all and (max-width: 500px){
+        letter-spacing: 0.1em;
+      }
     }
     &-header{
       padding-bottom: 24px;
@@ -75,6 +113,9 @@
       font-size: 24px;
       line-height: 159%;
       color: #093A84;
+      @media all and (max-width: 500px){
+        font-size: 18px;
+      }
     }
     &-off{
       font-weight: 400;
@@ -84,6 +125,9 @@
       padding: 6px 19px;
       background-color: #C9D3E9;
       border-radius: 7px;
+      @media all and (max-width: 500px){
+        font-size: 14px;
+      }
     }
     &-content{
       margin-top: 24px;

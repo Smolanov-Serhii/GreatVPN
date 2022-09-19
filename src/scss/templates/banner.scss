@@ -1,10 +1,19 @@
 .banner{
   background-color: #002649;
   position: relative;
+  @media all and (max-width: 500px){
+    height: 100vh;
+  }
   &-small{
     .banner__content{
       padding-top: 232px;
       padding-bottom: 232px;
+      @media all and (max-width: 1024px){
+        padding-top: 240px;
+      }
+      @media all and (max-width: 500px){
+        padding-top: 126px;
+      }
     }
   }
   &__container{
@@ -18,22 +27,35 @@
     width: auto;
     pointer-events: none;
     mix-blend-mode: overlay;
+    display: flex;
+    align-items: flex-end;
     img{
-      height: 100%;
+      height: auto;
       width: auto;
     }
   }
   &__img{
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     height: 100%;
     width: auto;
     pointer-events: none;
     mix-blend-mode: lighten;
+    display: flex;
+    align-items: flex-end;
+    @media all and (max-width: 500px){
+      width: 100%;
+      picture{
+        width: 100%;
+      }
+    }
     img{
-      height: 100%;
+      height: auto;
       width: auto;
+      @media all and (max-width: 500px){
+        width: 100%;
+      }
     }
   }
   &__content{
@@ -41,6 +63,12 @@
     padding-bottom: 328px;
     position: relative;
     max-width: 978px;
+    @media all and (max-width: 1024px){
+      padding-top: 240px;
+    }
+    @media all and (max-width: 500px){
+      padding-top: 126px;
+    }
   }
   &__title{
     font-weight: 800;
@@ -50,6 +78,18 @@
     color: #FFFFFF;
     text-align: left;
     margin-bottom: 0;
+    @media all and (max-width: 1400px){
+      font-size: 64px;
+    }
+    @media all and (max-width: 1024px){
+      font-size: 54px;
+    }
+    @media all and (max-width: 768px){
+      font-size: 44px;
+    }
+    @media all and (max-width: 500px){
+      font-size: 36px;
+    }
   }
   &__subtitle{
     margin-top: 18px;
@@ -58,6 +98,13 @@
     line-height: 135.5%;
     color: #FFFFFF;
     margin-bottom: 0;
+    @media all and (max-width: 500px){
+      font-size: 16px;
+      line-height: 136.5%;
+      br{
+        display: none;
+      }
+    }
   }
   &__desc{
     margin-top: 26px;
@@ -67,5 +114,8 @@
   }
   &__btn{
     margin-top: 47px;
+    @media all and (max-width: 500px){
+      margin-top: 24px;
+    }
   }
 }

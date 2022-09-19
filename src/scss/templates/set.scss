@@ -2,12 +2,31 @@
   margin-top: 115px;
   position: relative;
   margin-bottom: 140px;
+  @media all and (max-width: 500px){
+    margin-top: 69px;
+    margin-bottom: 63px;
+  }
+  &__title{
+    @media all and (max-width: 500px){
+      margin-bottom: 25px;
+    }
+  }
+  &__subtitle{
+    @media all and (max-width: 500px){
+      margin-bottom: 19px;
+    }
+  }
   &__dec{
     position: absolute;
     left: 0;
     top: -722px;
     z-index: -1;
     mix-blend-mode: multiply;
+    @media all and (max-width: 500px){
+      left: auto;
+      right: 0;
+      top: -655px;
+    }
   }
   &__container{
     display: flex;
@@ -22,5 +41,21 @@
   }
   &__img{
     width: calc(100% - 600px);
+    @media all and (max-width: 1024px){
+      margin-top: 69px;
+      width: 100%;
+    }
+    @media all and (max-width: 500px){
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-top: 23px;
+      picture{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
 }

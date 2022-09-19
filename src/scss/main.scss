@@ -105,11 +105,17 @@ main{
   &__stroke{
     padding: 13px 63px;
     border: 1px solid #005DB2;
+    @media all and (max-width: 500px){
+      padding: 15px 69px 13px 69px;
+    }
   }
   &__blue{
     padding: 15px 63px 13px 63px;
     position: relative;
     background: linear-gradient(268.55deg, #005DB3 0%, #00C4EF 99.44%);
+    @media all and (max-width: 500px){
+      padding: 15px 69px 13px 69px;
+    }
     &:hover{
       background: linear-gradient(268.55deg, #005DB3 20%, #00C4EF 120.44%);
     }
@@ -117,6 +123,10 @@ main{
   span{
     color: white;
     line-height: 100%;
+    white-space: nowrap;
+    @media all and (max-width: 500px){
+      font-size: 16px;
+    }
   }
   img{
     position: absolute;
@@ -131,6 +141,18 @@ main{
   text-transform: uppercase;
   color: #093A84;
   margin-bottom: 30px;
+  @media all and (max-width: 1400px){
+    font-size: 45px;
+  }
+  @media all and (max-width: 1024px){
+    font-size: 42px;
+  }
+  @media all and (max-width: 768px){
+    font-size: 39px;
+  }
+  @media all and (max-width: 500px){
+    font-size: 36px;
+  }
 }
 .section-subtitle{
   font-weight: 400;
@@ -141,6 +163,12 @@ main{
   margin-left: auto;
   margin-bottom: 30px;
   max-width: 776px;
+  @media all and (max-width: 1024px){
+    font-size: 15px;
+  }
+  @media all and (max-width: 500px){
+    font-size: 14px;
+  }
 }
 @import "templates/header";
 @import "templates/banner";

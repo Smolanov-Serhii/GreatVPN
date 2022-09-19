@@ -34,6 +34,18 @@
   </div>
 </div>
 <header class="header default">
+  <div class="header__mobile main-container">
+    <div class="header__mobile-logo">
+      <a href="index.html">
+        <img src="/images/header/logo.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="header__mobile-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   <div class="header__container main-container">
     <div class="header__logo">
       <a href="index.html">
@@ -56,13 +68,13 @@
 <main id="main">
   <section class="text-banner">
     <div class="text-banner__container main-container">
-      <h1 class="text-banner__title">
+      <h1 class="text-banner__title" data-aos="fade-right" data-aos-delay="100">
         VPN Berry Service
         Privacy Policy
       </h1>
     </div>
   </section>
-  <section class="text">
+  <section class="text" data-aos="fade-up" data-aos-delay="300">
     <div class="text__dec">
       <img src="images/templates/text/dec1.svg" alt="dec1">
       <img src="images/templates/text/dec2.svg" alt="dec1">
@@ -131,17 +143,20 @@
   <section class="vstavka main-container">
     <div class="vstavka__container">
       <div class="vstavka__bg">
-        <img src="/images/templates/vstavka/bg.svg" alt="Set up a secure VPN connection on a Mac">
+        <picture>
+          <source srcset="/images/templates/vstavka/bg.svg" media="(min-width: 500px)">
+          <img src="/images/templates/vstavka/bg-mob.svg" alt="Set up a secure VPN connection on a Mac">
+        </picture>
       </div>
       <div class="vstavka__content">
-        <h2 class="vstavka__title section-title">
+        <h2 class="vstavka__title section-title" data-aos="fade-right" data-aos-delay="100">
           Set up a secure VPN connection on a Mac
         </h2>
-        <h3 class="vstavka__subtitle section-subtitle">
+        <h3 class="vstavka__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
           with a 30-day money-back guarantee
         </h3>
       </div>
-      <div class="vstavka__button">
+      <div class="vstavka__button" data-aos="fade-up" data-aos-delay="500">
         <a href="#" download="" class="header__app button button__blue">
           <img src="/images/header/apple.svg" alt="downloads">
           <span>Download VPN</span>

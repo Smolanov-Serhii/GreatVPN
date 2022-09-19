@@ -1,6 +1,10 @@
 .vstavka{
   margin-bottom: 70px;
   margin-top: 66px;
+  @media all and (max-width: 500px){
+    margin-top: 81px;
+    margin-bottom: 41px;
+  }
   &__container{
     padding: 59px  69px;
     background: linear-gradient(268.55deg, #003B72 0%, #005DB3 99.44%);
@@ -10,6 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media all and (max-width: 1024px){
+      flex-wrap: wrap;
+    }
+    @media all and (max-width: 768px){
+      padding: 53px  26px 74px 26px;
+    }
   }
   &__bg{
     position: absolute;
@@ -19,10 +29,18 @@
     height: 100%;
     mix-blend-mode: overlay;
     pointer-events: none;
+    @media all and (max-width: 500px){
+      left: 54px;
+      bottom: 27px;
+      top: auto;
+    }
     img{
       object-fit: cover;
       width: 100%;
       height: 100%;
+      @media all and (max-width: 500px){
+        object-fit: contain;
+      }
     }
   }
   &__content{
@@ -36,5 +54,14 @@
   &__subtitle{
     margin-bottom: 0;
     color: #FFFFFF;
+  }
+  &__button{
+    @media all and (max-width: 1024px){
+      margin-top: 57px;
+    }
+    @media all and (max-width: 500px){
+      text-align: center;
+      width: 100%;
+    }
   }
 }

@@ -33,6 +33,18 @@
         </div>
     </div>
     <header class="header default">
+        <div class="header__mobile main-container">
+            <div class="header__mobile-logo">
+                <a href="index.html">
+                    <img src="/images/header/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="header__mobile-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <div class="header__container main-container">
             <div class="header__logo">
                 <a href="index.html">
@@ -55,20 +67,26 @@
     <main id="main">
         <section class="banner">
             <div class="banner__img">
-                <img src="/images/templates/banner/bg1.png" alt="Banner">
+                <picture>
+                    <source srcset="/images/templates/banner/bg1.png" media="(min-width: 500px)">
+                    <img src="/images/templates/banner/bg1-mob.png" alt="Banner">
+                </picture>
             </div>
             <div class="banner__decoration">
-                <img src="/images/templates/banner/decoration.svg" alt="Decoration">
+                <picture>
+                    <source srcset="/images/templates/banner/decoration.svg" media="(min-width: 500px)">
+                    <img src="/images/templates/banner/decoration-mob.svg" alt="Decoration">
+                </picture>
             </div>
             <div class="banner__container main-container">
                 <div class="banner__content">
-                    <h1 class="banner__title">
+                    <h1 class="banner__title" data-aos="fade-right" data-aos-delay="100">
                         Protect <br>yourself online
                     </h1>
-                    <h2 class="banner__subtitle">
+                    <h2 class="banner__subtitle" data-aos="fade-right" data-aos-delay="300">
                         High-speed Swiss VPN that <br>safeguards your privacy.
                     </h2>
-                    <a href="#" class="button banner__btn button__stroke">
+                    <a href="#" class="button banner__btn button__stroke" data-aos="fade-right" data-aos-delay="500">
                         <span>Read more</span>
                     </a>
                 </div>
@@ -77,7 +95,7 @@
         <section class="color color__up">
             <div class="color__container main-container">
                 <div class="color__list">
-                    <div class="color__item">
+                    <div class="color__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="color__icon">
                             <img src="/images/templates/color/icon-1.svg" alt="Security">
                         </div>
@@ -88,7 +106,7 @@
                             Our secure VPN sends your internet traffic through an encrypted VPN tunnel, so your passwords and confidential data stay safe, even over public or untrusted Internet connections.
                         </p>
                     </div>
-                    <div class="color__item">
+                    <div class="color__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="color__icon">
                             <img src="/images/templates/color/icon-2.svg" alt="Privacy">
                         </div>
@@ -99,7 +117,7 @@
                             Keep your browsing history private. As a Swiss VPN provider, we do not log user activity or share data with third parties. Our anonymous VPN service enables Internet without surveillance.
                         </p>
                     </div>
-                    <div class="color__item">
+                    <div class="color__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="color__icon">
                             <img src="/images/templates/color/icon-3.svg" alt="Freedom">
                         </div>
@@ -115,26 +133,32 @@
         </section>
         <section class="set">
             <div class="set__dec">
-                <img src="/images/templates/set/decor.svg" alt="Decoration">
+                <picture>
+                    <source srcset="/images/templates/set/decor.svg" media="(min-width: 500px)">
+                    <img src="/images/templates/set/decor-mob.svg" alt="Decoration">
+                </picture>
             </div>
             <div class="set__container main-container">
                 <div class="set__content text">
-                    <h2 class="set__title section-title">
+                    <h2 class="set__title section-title" data-aos="fade-right" data-aos-delay="100">
                         How to set up a VPN on Mac (Apple) computers
                     </h2>
-                    <h3 class="set__subtitle section-subtitle">
+                    <h3 class="set__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
                         Setting up the best VPN for Mac is hassle-free. Simply install the ExpressVPN app on your macOS desktop or laptop and get connected in under five minutes.
                     </h3>
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-delay="500">
                         <li>Subscribe to ExpressVPN on the <a href="#">order page.</a></li>
                         <li>Download and install the Great VPN app for Mac.</li>
                         <li>Connect to any of our ultra-secure server locations.</li>
                         <li>Use the internet the way you want to use it!</li>
                     </ul>
-                    <p>If you need help, the <a href="#">Great VPN Support Team</a> is available via live chat and email.</p>
+                    <p data-aos="fade-right" data-aos-delay="500">If you need help, the <a href="#">Great VPN Support Team</a> is available via live chat and email.</p>
                 </div>
-                <div class="set__img">
-                    <img src="/images/templates/set/image.png" alt="How to set up a VPN on Mac (Apple) computers">
+                <div class="set__img" data-aos="fade-left" data-aos-delay="700">
+                    <picture>
+                        <source srcset="/images/templates/set/image.png" media="(min-width: 500px)">
+                        <img src="/images/templates/set/image-mob.png" alt="How to set up a VPN on Mac (Apple) computers">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -143,49 +167,49 @@
                 <img src="/images/templates/great/dec.svg" alt="Decoration">
             </div>
             <div class="great__container main-container">
-                <h2 class="great__title section-title">
+                <h2 class="great__title section-title" data-aos="fade-up" data-aos-delay="100">
                     GREAT VPN vs. free VPNs
                 </h2>
-                <h3 class="great__subtitle section-subtitle">
+                <h3 class="great__subtitle section-subtitle" data-aos="fade-up" data-aos-delay="300">
                     Free VPNs can be tempting, but saving financially often means sacrificing your privacy. A free VPN service does not have the resources to provide a top-notch service.
                 </h3>
                 <div class="great__list">
-                    <div class="great__item">
+                    <div class="great__item" data-aos="fade-up" data-aos-delay="400">
                         <div class="great__item-icon">
                             <img src="/images/templates/great/icon1.svg" alt="Unlimited data">
                         </div>
                         <h3 class="great__item-title">Unlimited data</h3>
                         <p class="great__item-desc">Your data shouldn’t be capped by a privacy tool. Use a VPN that allows you to use the internet without limiting it.</p>
                     </div>
-                    <div class="great__item">
+                    <div class="great__item" data-aos="fade-up" data-aos-delay="500">
                         <div class="great__item-icon">
                             <img src="/images/templates/great/icon2.svg" alt="Faster speeds">
                         </div>
                         <h3 class="great__item-title">Faster speeds</h3>
                         <p class="great__item-desc">Free VPNs do not have the resources to keep speed drops to a minimum. Forget constant loading screens.</p>
                     </div>
-                    <div class="great__item">
+                    <div class="great__item" data-aos="fade-up" data-aos-delay="600">
                         <div class="great__item-icon">
                             <img src="/images/templates/great/icon3.svg" alt="Prioritizing security">
                         </div>
                         <h3 class="great__item-title">Prioritizing security</h3>
                         <p class="great__item-desc">It’s simple, free VPNs have to worry about monetizing your data before they can focus on the security of it.</p>
                     </div>
-                    <div class="great__item">
+                    <div class="great__item" data-aos="fade-up" data-aos-delay="700">
                         <div class="great__item-icon">
                             <img src="/images/templates/great/icon4.svg" alt="No logs">
                         </div>
                         <h3 class="great__item-title">No logs</h3>
                         <p class="great__item-desc">Don’t let others profit off of your data. Choose VPNs like Surfshark which do not track your data.</p>
                     </div>
-                    <div class="great__item">
+                    <div class="great__item" data-aos="fade-up" data-aos-delay="800">
                         <div class="great__item-icon">
                             <img src="/images/templates/great/icon5.svg" alt="Thousands of servers">
                         </div>
                         <h3 class="great__item-title">Thousands of servers</h3>
                         <p class="great__item-desc">Don’t settle for the same overloaded servers, invest in a VPN that has the means to expand their server list.</p>
                     </div>
-                    <div class="great__item">
+                    <div class="great__item" data-aos="fade-up" data-aos-delay="900">
                         <div class="great__item-icon">
                             <img src="/images/templates/great/icon6.svg" alt="Modern protocols">
                         </div>
@@ -204,13 +228,13 @@
             </div>
             <div class="full__container main-container">
                 <div class="full__content">
-                    <h2 class="full__title section-title">
+                    <h2 class="full__title section-title" data-aos="fade-right" data-aos-delay="100">
                         Global VPN Server Network
                     </h2>
-                    <div class="full__subtitle section-subtitle">
+                    <div class="full__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
                         VPN Berry has hundreds of secure VPN servers all around the world, including several free VPN servers. This ensures that there is always a high bandwidth server nearby no matter where you are connecting from, providing a low latency VPN connection for best performance.
                     </div>
-                    <a href="#" download="" class="header__app button button__blue">
+                    <a href="#" download="" class="header__app button button__blue" data-aos="fade-right" data-aos-delay="500">
                         <img src="/images/header/apple.svg" alt="downloads">
                         <span>Download VPN</span>
                     </a>
@@ -222,11 +246,11 @@
                 <img src="/images/templates/faq/dec.svg" alt="Decoration">
             </div>
             <div class="faq__container middle-container">
-                <div class="faq__title section-title">
+                <div class="faq__title section-title" data-aos="fade-up" data-aos-delay="100">
                     Frequently asked questions
                 </div>
                 <div class="faq__list">
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -240,7 +264,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -254,7 +278,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -268,7 +292,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -282,7 +306,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -296,7 +320,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -310,7 +334,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -324,7 +348,7 @@
                             <p>A VPN on your Mac will ensure that when you go online, you can do so with privacy and security. By connecting to any of our VPN server locations across the globe, you can hide your device's IP address, protect your data on unsecured Wi-Fi networks, and access blocked websites.</p>
                         </div>
                     </div>
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item-header">
                             <h3 class="faq__item-title">
                                 Do I need a VPN app on my Mac?
@@ -346,13 +370,13 @@
                 <img src="/images/templates/plan/dec.svg" alt="Decoration">
             </div>
             <div class="plan__container main-container">
-                <h2 class="plan__title section-title">
+                <h2 class="plan__title section-title" data-aos="fade-up" data-aos-delay="100">
                     Get the plan that works for you
                 </h2>
-                <h3 class="plan__subtitle section-subtitle">
+                <h3 class="plan__subtitle section-subtitle" data-aos="fade-up" data-aos-delay="300">
                     Browse privately, access blocked content, and enjoy digital freedom
                 </h3>
-                <div class="plan__list">
+                <div class="plan__list" data-aos="fade-up" data-aos-delay="500">
                     <div class="plan__item">
                         <div class="plan__item-header">
                             <div class="plan__item-period">
@@ -422,7 +446,7 @@
                 </div>
             </div>
         </section>
-        <section class="pay">
+        <section class="pay" data-aos="fade-up" data-aos-delay="100">
             <div class="pay__container main-container">
                 <div class="pay__list">
                     <div class="pay__item">
@@ -442,10 +466,10 @@
                 <img src="/images/templates/customers/dec.svg" alt="Decoration">
             </div>
             <div class="customers__container main-container">
-                <h2 class="customers__title section-title">
+                <h2 class="customers__title section-title" data-aos="fade-up" data-aos-delay="100">
                     Customers love the VPN Berry app for macOS
                 </h2>
-                <div class="customers__list swiper-container">
+                <div class="customers__list swiper-container" data-aos="fade-up" data-aos-delay="400">
                     <div class="customers__wrapper swiper-wrapper">
                         <div class="customers__item swiper-slide">
                             <div class="customers__item-photo">
@@ -525,17 +549,20 @@
         <section class="vstavka main-container">
             <div class="vstavka__container">
                 <div class="vstavka__bg">
-                    <img src="/images/templates/vstavka/bg.svg" alt="Set up a secure VPN connection on a Mac">
+                    <picture>
+                        <source srcset="/images/templates/vstavka/bg.svg" media="(min-width: 500px)">
+                        <img src="/images/templates/vstavka/bg-mob.svg" alt="Set up a secure VPN connection on a Mac">
+                    </picture>
                 </div>
                 <div class="vstavka__content">
-                    <h2 class="vstavka__title section-title">
+                    <h2 class="vstavka__title section-title" data-aos="fade-right" data-aos-delay="100">
                         Set up a secure VPN connection on a Mac
                     </h2>
-                    <h3 class="vstavka__subtitle section-subtitle">
+                    <h3 class="vstavka__subtitle section-subtitle" data-aos="fade-right" data-aos-delay="300">
                         with a 30-day money-back guarantee
                     </h3>
                 </div>
-                <div class="vstavka__button">
+                <div class="vstavka__button" data-aos="fade-up" data-aos-delay="500">
                     <a href="#" download="" class="header__app button button__blue">
                         <img src="/images/header/apple.svg" alt="downloads">
                         <span>Download VPN</span>
